@@ -1,11 +1,14 @@
 header.main
-  include video.jade
   .container
-    .row
+    .row.text-center
       .jumbotron
-        h1 Create your branded office design
+        h1 Create your office design
         .input-group
-          input.form-control(type="text", placeholder="How many desks you need?")
-          input.form-control(type="text", placeholder="How big is your office?")
-          .input-group-btn
+          .col-md-5
+            input.form-control(type="text", placeholder="How many desks you need?")
+          .col-md-5
+            input.form-control(type="text", placeholder="How big is your office?")
+          .col-md-4
+          .col-md-2.input-group-btn
             a.btn.btn-lg.btn-outline.btn-round(href='#list', role='button') Create »
+        
