@@ -1,5 +1,5 @@
 var img = document.createElement('img');
-img.setAttribute('src', 'assets/js/vibrant/examples/octocat.png')
+img.setAttribute('src', 'file:///Users/fzarebinski/Downloads/BrandIt/dist/assets/js/vibrant/examples/octocat.png')
 
 img.addEventListener('load', function() {
     var vibrant = new Vibrant(img);
