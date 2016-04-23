@@ -6,6 +6,7 @@ function readURL(input) {
             window.localStorage.setItem("img",e.target.result);
             var img = document.getElementById("image_upload_preview");
             img.setAttribute('src', e.target.result)
+            $("#logo-text").hide();
 
             img.addEventListener('load', function() {
                 var vibrant = new Vibrant(img);

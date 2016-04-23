@@ -6886,8 +6886,15 @@ button.close {
   -webkit-background-size: cover;
           background-size: cover;
 }
+.main .btn-file {
+  min-width: 110px;
+}
 .main-group {
   padding-top: 60px;
+}
+.logo-img {
+  max-width: 75px;
+  max-height: 45px;
 }
 .video {
   position: absolute;
@@ -6903,18 +6910,26 @@ button.close {
        -o-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
 }
-#how:before {
-  height: 100vh;
-  background-image: url(../img/logo-mark.svg);
-  -webkit-background-size: contain;
-          background-size: contain;
-  opacity: .02;
-}
 .img-block {
   max-width: 100%;
 }
+.list-header {
+  padding-bottom: 15px;
+}
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.order-bar {
+  position: relative;
+  height: 300px;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .5) 40%, #00080d 85%, #000 90%), url(../img/bg-design.jpg) center left no-repeat;
+  background:      -o-radial-gradient(center, ellipse, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .5) 40%, #00080d 85%, #000 90%), url(../img/bg-design.jpg) center left no-repeat;
+  background:         radial-gradient(ellipse at center, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .5) 40%, #00080d 85%, #000 90%), url(../img/bg-design.jpg) center left no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.order-bar .btn-file {
+  min-width: 110px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
