@@ -3403,26 +3403,26 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-outline {
-  color: #555;
-  background-color: #fff;
+  color: #fff;
+  background-color: #269792;
   border-color: #fff;
 }
 .btn-outline:focus,
 .btn-outline.focus {
-  color: #555;
-  background-color: #e6e6e6;
+  color: #fff;
+  background-color: #1c6e6b;
   border-color: #bfbfbf;
 }
 .btn-outline:hover {
-  color: #555;
-  background-color: #e6e6e6;
+  color: #fff;
+  background-color: #1c6e6b;
   border-color: #e0e0e0;
 }
 .btn-outline:active,
 .btn-outline.active,
 .open > .dropdown-toggle.btn-outline {
-  color: #555;
-  background-color: #e6e6e6;
+  color: #fff;
+  background-color: #1c6e6b;
   border-color: #e0e0e0;
 }
 .btn-outline:active:hover,
@@ -3434,8 +3434,8 @@ fieldset[disabled] .btn-danger.focus {
 .btn-outline:active.focus,
 .btn-outline.active.focus,
 .open > .dropdown-toggle.btn-outline.focus {
-  color: #555;
-  background-color: #d4d4d4;
+  color: #fff;
+  background-color: #15514f;
   border-color: #bfbfbf;
 }
 .btn-outline:active,
@@ -3452,16 +3452,12 @@ fieldset[disabled] .btn-outline:focus,
 .btn-outline.disabled.focus,
 .btn-outline[disabled].focus,
 fieldset[disabled] .btn-outline.focus {
-  background-color: #fff;
+  background-color: #269792;
   border-color: #fff;
 }
 .btn-outline .badge {
-  color: #fff;
-  background-color: #555;
-}
-.btn-outline:hover {
-  color: #fff;
-  background-color: #269792;
+  color: #269792;
+  background-color: #fff;
 }
 .btn-link {
   font-weight: normal;
@@ -4584,9 +4580,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  -webkit-transition: background .3s ease-in;
-       -o-transition: background .3s ease-in;
-          transition: background .3s ease-in;
+  -webkit-transition: background .1s ease-in;
+       -o-transition: background .1s ease-in;
+          transition: background .1s ease-in;
 }
 .navbar-default.affix {
   background-color: #fff;
@@ -5120,6 +5116,10 @@ a.badge:focus {
 .jumbotron .input-group-addon {
   color: #fff;
   background-color: rgba(255, 255, 255, .3);
+}
+.jumbotron .btn-file {
+  color: #555;
+  background-color: #fff;
 }
 .thumbnail {
   display: block;
@@ -6914,7 +6914,7 @@ button.close {
   max-width: 100%;
 }
 section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
