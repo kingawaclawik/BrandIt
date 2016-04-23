@@ -6880,6 +6880,9 @@ button.close {
           background-size: contain;
   opacity: .02;
 }
+.img-block {
+  max-width: 100%;
+}
 section {
   padding-top: 100px;
   padding-bottom: 100px;
