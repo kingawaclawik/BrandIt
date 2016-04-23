@@ -55,4 +55,8 @@ $(document).ready(function () {
       window.localStorage.setItem("desks",$($("input[type='number']")[0]).val())
       window.localStorage.setItem("size",$($("input[type='number']")[1]).val())
     });
+    $('#designTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
 })

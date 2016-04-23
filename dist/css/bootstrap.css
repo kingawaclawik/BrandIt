@@ -6920,7 +6920,7 @@ section {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.order-bar {
+.design {
   position: relative;
   height: 300px;
   background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .5) 40%, #00080d 85%, #000 90%), url(../img/bg-design.jpg) center left no-repeat;
@@ -6929,7 +6929,26 @@ section {
   -webkit-background-size: cover;
           background-size: cover;
 }
+.order-bar {
+  color: #fff;
+  background-color: #269792;
+  border-bottom: 1px #ddd solid;
+}
 .order-bar .btn-file {
   min-width: 110px;
+}
+.order-bar .input-group-addon {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.order-bar .input-lg {
+  border: none;
+}
+.order-bar .btn-file {
+  color: #555;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -1,11 +1,33 @@
-.order-bar{
+.design{
     position: relative;
     height: 300px;
     background: 
                 radial-gradient(ellipse at center,rgba(0,0,0,.3) 0, rgba(0,0,0,.5) 40%,#00080d 85%,#000 90%), 
                 url(../img/bg-design.jpg) center left no-repeat;
     background-size: cover;
+}
+
+.order-bar{
+    background-color: @brand-primary;
+    color: #fff;
+    border-bottom: 1px #ddd solid;
+    
     .btn-file{
         min-width: 110px;
+    }
+    
+    .input-group-addon{
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+    .input-lg{
+        border: none;
+    }
+    .btn-file{
+        background-color: #fff;
+        border: none;
+        border-radius: 0px;
+        color: @gray;
     }
 }
