@@ -38,11 +38,7 @@
     script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,300" rel="stylesheet" type="text/css">
-    <script src="https://use.typekit.net/kmh6yni.js"></script>
-    <script src="assets/js/vibrant/dist/Vibrant.js"></script>
-    <script src="assets/js/brandit.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans:400,300" rel="stylesheet" type="text/css">
   </head>
   <body data-spy="scroll" data-target="nav-main">
     <nav id="nav-main" data-spy="affix" data-offset-top="240" class="navbar navbar-default navbar-fixed-top affix-top">
@@ -80,68 +76,48 @@
       </div>
     </nav>
     <header class="main">
-      <video autoplay="" loop="" muted="" class="video">
-        <source src="http://ak0.picdn.net/shutterstock/videos/2787790/preview/stock-footage-new-york-september-models-walk-the-runway-for-j-mendel-collection-by-gilles-mendel-during-spr.mp4" type="video/mp4">
-        <source src="http://ak0.picdn.net/shutterstock/videos/2787790/preview/stock-footage-new-york-september-models-walk-the-runway-for-j-mendel-collection-by-gilles-mendel-during-spr.webm" type="video/webm">
-        <source src="http://ak0.picdn.net/shutterstock/videos/2787790/preview/stock-footage-new-york-september-models-walk-the-runway-for-j-mendel-collection-by-gilles-mendel-during-spr.ogv" type="video/ogg">
-      </video>
       <div class="container">
-        <div class="row">
+        <div class="row text-center">
           <div class="jumbotron">
-            <h1>Create your branded office design</h1>
+            <h1>Create your office design</h1>
             <div class="input-group">
+<<<<<<< HEAD
               <input type="text" placeholder="How many desks you need?" class="form-control">
               <input type="text" placeholder="How big is your office?" class="form-control">
               <input type="file" class="form-control">
+=======
+              <input type="text" placeholder="How many desks you need?" class="form-control input-lg"><span style="width:0px;" class="input-group-btn"></span>
+              <input type="text" placeholder="How big is your office?" class="form-control input-lg">
+>>>>>>> 079f40fca2918acdc67e764a308d67e5ab3d92b5
               <div class="input-group-btn"><a href="#list" role="button" class="btn btn-lg btn-outline btn-round">Create »</a></div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section id="how">
+    <p>Dupa</p>
+    <p>test</p>
+    <section id="list">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
-            <h1>How does it works?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales magna quis mollis pretium. Pellentesque pulvinar nisi ac turpis suscipit finibus. Ut volutpat, leo at volutpat consectetur, metus tellus rhoncus lorem, ut molestie eros risus vel elit. Pellentesque sed nisl mauris. Integer sed magna at urna volutpat ullamcorper. Suspendisse potenti. Fusce laoreet lorem massa, nec tincidunt augue dictum in. Suspendisse gravida, erat sed sagittis consequat, augue risus dictum felis, sit amet dictum ex tellus sed tortor. Morbi augue arcu, imperdiet a interdum id, semper non massa. Quisque eget erat dui. Fusce ex sapien, iaculis ut augue a, lacinia tempus dui. Phasellus nec sapien ut enim mollis posuere vitae dapibus dolor. Sed at ex nec nisi tincidunt bibendum sit amet eu urna. In tempus, felis vitae dignissim bibendum, purus tortor vestibulum libero, ac sagittis diam tortor commodo urna. Nulla commodo mi vitae lobortis lacinia. Ut molestie neque id ultricies aliquet.</p>
+          <h1>Browse our designs</h1>
+          <div class="col-md-4"><img src="./img/img-minimal.jpg" class="img-block">
+            <h1>Minimal</h1>
+            <p>Simple and cheap but sill looking awsome. Ideal for early stage project and companies.</p>
+          </div>
+          <div class="col-md-4"><img src="./img/img-economy.jpg" class="img-block">
+            <h1>Economy </h1>
+            <p>Economy cos</p>
+          </div>
+          <div class="col-md-4"><img src="./img/img-full.jpg" class="img-block">
+            <h1>Full</h1>
+            <p>Everything the best, unique and esentional design perfect for your mature company.</p>
           </div>
         </div>
       </div>
     </section>
-    <nav id="nav-main" data-spy="affix" data-offset-top="240" class="navbar navbar-default navbar-fixed-top affix-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="img/logo-white.svg" alt="BrandIt Logo" class="logo-top"><img src="img/logo.svg" alt="BrandIt Logo" class="logo"></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#Designs">Designs</a></li>
-            <li><a href="#Products">Products</a></li>
-            <li><a href="#Orders">My Orders</a></li>
-            <!--li.dropdown
-            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-              | Dropdown 
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='#') Action
-              li
-                a(href='#') Another action
-              li
-                a(href='#') Something else here
-              li.divider(role='separator')
-              li.dropdown-header Nav header
-              li
-                a(href='#') Separated link
-              li
-                a(href='#') One more separated link
-            li
-              a(href='#contact') Demo
-            -->
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <footer>
+      <p>Stopka </p>
+    </footer>
   </body>
 </html>
