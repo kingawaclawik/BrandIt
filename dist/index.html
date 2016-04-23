@@ -39,6 +39,7 @@
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script src="assets/js/vibrant/dist/Vibrant.js"></script>
     <script src="assets/js/brandit.js"></script>
   </head>
@@ -82,9 +83,10 @@
         <div class="row text-center">
           <div class="jumbotron">
             <h1>Create your own office design</h1>
-            <div class="col-md-8 col-md-offset-2 input-group main-group"><span class="input-group-addon input-lg">How many desks you need:</span>
+            <div class="col-md-10 col-md-offset-1 input-group main-group"><span class="input-group-addon input-lg">How many desks you need:</span>
               <input type="number" placeholder="" class="form-control input-lg text-right"><span style="border-left: 0; border-right: 0;" class="input-group-addon input-lg">Office size: </span>
-              <input type="number" placeholder="" class="form-control input-lg text-right"><span style="border-left: 0; border-right: 0;" class="input-group-addon input-lg">m2</span>
+              <input type="number" placeholder="" class="form-control input-lg text-right"><span style="border-left: 0; border-right: 0;" class="input-group-addon input-lg">m2</span><span class="btn btn-default btn-file">
+                <input type="file"></span><img id="image_upload_preview" style="display:none;">
               <div class="input-group-btn"><a href="#list" role="button" class="btn btn-lg btn-outline btn-round">Create »</a></div>
             </div>
           </div>
