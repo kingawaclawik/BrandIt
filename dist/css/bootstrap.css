@@ -1126,7 +1126,7 @@ img {
   height: auto;
 }
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 50px;
 }
 .img-thumbnail {
   display: inline-block;
@@ -2749,7 +2749,7 @@ select[multiple].input-sm {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 select.input-lg {
   height: 46px;
@@ -2764,7 +2764,7 @@ select[multiple].input-lg {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 .form-group-lg select.form-control {
   height: 46px;
@@ -3403,26 +3403,26 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-outline {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0);
+  color: #555;
+  background-color: #fff;
   border-color: #fff;
 }
 .btn-outline:focus,
 .btn-outline.focus {
-  color: #fff;
-  background-color: rgba(230, 230, 230, 0);
+  color: #555;
+  background-color: #e6e6e6;
   border-color: #bfbfbf;
 }
 .btn-outline:hover {
-  color: #fff;
-  background-color: rgba(230, 230, 230, 0);
+  color: #555;
+  background-color: #e6e6e6;
   border-color: #e0e0e0;
 }
 .btn-outline:active,
 .btn-outline.active,
 .open > .dropdown-toggle.btn-outline {
-  color: #fff;
-  background-color: rgba(230, 230, 230, 0);
+  color: #555;
+  background-color: #e6e6e6;
   border-color: #e0e0e0;
 }
 .btn-outline:active:hover,
@@ -3434,8 +3434,8 @@ fieldset[disabled] .btn-danger.focus {
 .btn-outline:active.focus,
 .btn-outline.active.focus,
 .open > .dropdown-toggle.btn-outline.focus {
-  color: #fff;
-  background-color: rgba(212, 212, 212, 0);
+  color: #555;
+  background-color: #d4d4d4;
   border-color: #bfbfbf;
 }
 .btn-outline:active,
@@ -3452,12 +3452,12 @@ fieldset[disabled] .btn-outline:focus,
 .btn-outline.disabled.focus,
 .btn-outline[disabled].focus,
 fieldset[disabled] .btn-outline.focus {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #fff;
   border-color: #fff;
 }
 .btn-outline .badge {
-  color: rgba(255, 255, 255, 0);
-  background-color: #fff;
+  color: #fff;
+  background-color: #555;
 }
 .btn-link {
   font-weight: normal;
@@ -3497,7 +3497,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -3904,7 +3904,7 @@ tbody.collapse.in {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
@@ -3978,7 +3978,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-addon.input-lg {
   padding: 10px 16px;
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -4875,13 +4875,13 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .pagination-sm > li > a,
 .pagination-sm > li > span {
@@ -5074,7 +5074,7 @@ a.badge:focus {
 .container-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 .jumbotron .container {
   max-width: 100%;
@@ -5091,8 +5091,12 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 56px;
   }
+}
+.jumbotron .input-group-addon {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .3);
 }
 .thumbnail {
   display: block;
@@ -5928,7 +5932,7 @@ button.list-group-item-danger.active:focus {
 }
 .well-lg {
   padding: 24px;
-  border-radius: 6px;
+  border-radius: 50px;
 }
 .well-sm {
   padding: 9px;
@@ -6005,7 +6009,7 @@ button.close {
           background-clip: padding-box;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
+  border-radius: 50px;
   outline: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
@@ -6225,7 +6229,7 @@ button.close {
           background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
+  border-radius: 50px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 
@@ -6249,7 +6253,7 @@ button.close {
   font-size: 14px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
-  border-radius: 5px 5px 0 0;
+  border-radius: 49px 49px 0 0;
 }
 .popover-content {
   padding: 9px 14px;
@@ -6853,11 +6857,14 @@ button.close {
 .main {
   position: relative;
   height: 100vh;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #00080d 85%, #000 90%), url(../img/bg-main.jpg) center left no-repeat;
-  background:      -o-radial-gradient(center, ellipse, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #00080d 85%, #000 90%), url(../img/bg-main.jpg) center left no-repeat;
-  background:         radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #00080d 85%, #000 90%), url(../img/bg-main.jpg) center left no-repeat;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .5) 40%, #00080d 85%, #000 90%), url(../img/bg-main.jpg) center left no-repeat;
+  background:      -o-radial-gradient(center, ellipse, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .5) 40%, #00080d 85%, #000 90%), url(../img/bg-main.jpg) center left no-repeat;
+  background:         radial-gradient(ellipse at center, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, .5) 40%, #00080d 85%, #000 90%), url(../img/bg-main.jpg) center left no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
+}
+.main-group {
+  padding-top: 60px;
 }
 .video {
   position: absolute;

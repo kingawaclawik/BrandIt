@@ -2,6 +2,9 @@
 .main {
   position: relative;
   height: 100vh;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #00080d 85%, #000000 90%), url(../img/bg-main.jpg) center left no-repeat;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.5) 40%, #00080d 85%, #000000 90%), url(../img/bg-main.jpg) center left no-repeat;
   background-size: cover;
+}
+.main-group {
+  padding-top: 60px;
 }
