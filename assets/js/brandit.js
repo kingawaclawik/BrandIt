@@ -67,16 +67,47 @@ function getJSON() {
 }
 
 function getTable() {
+    /*
+    var quantArr=[];
+
+    if($(".quantity-input").length) {
+        for(i=0;i<$(".quantity-input").length;i++) {
+            quantArr[i]=$(".quantity-input")[i].val();
+        }
+    }
+    */
     $(".table-order").html("");
 
     var arr=getJSON();
     var fullprice=0;
     for(i=0;i<arr.length;i++) {
-        if(window.localStorage.getItem("desks")!=undefined && !isNaN(parseInt(window.localStorage.getItem("desks")))) {
-            var quantity=parseInt(window.localStorage.getItem("desks"));
+        //if(!quantArr.length) {
+            if(window.localStorage.getItem("desks")!=undefined && !isNaN(parseInt(window.localStorage.getItem("desks")))) {
+                var quantity=parseInt(window.localStorage.getItem("desks"));
+                if(quantity>=1) {
+                    if(i==2) {
+                        quantity=parseInt(quantity/2);  
+                    } else if(i==3) {
+                        quantity=parseInt(quantity/6);
+                    } else if(i==4) {
+                        quantity=parseInt(quantity/4);
+                    }
+
+                    if(!quantity) {
+                        quantity=1;
+                    }
+                }
+            } else {
+                var quantity=0;
+            }
+            /*
         } else {
-            var quantity=0;
-        }
+            if(quantArr[i]!=undefined && !isNaN(parseInt(quantArr[i]))) {
+                var quantity=parseInt(quantArr[i]);
+            } else {
+                var quantity=0;
+            }
+        }*/
         var price=parseFloat(arr[i]['result']['extractorData']['data'][0]['group'][0]['Price'][0]['text'].split(" PLN")[0].replace(" ","").replace(",","."));
         var sumprice=quantity*price;
         fullprice+=sumprice;
