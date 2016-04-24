@@ -5,7 +5,7 @@ function readURL(input) {
         reader.onload = function (e) {
             window.localStorage.setItem("img",e.target.result);
             var img = document.getElementById("image_upload_preview");
-            img.setAttribute('src', e.target.result)
+            img.setAttribute('src', e.target.result);
             $("#logo-text").hide();
 
             img.addEventListener('load', function() {
@@ -44,11 +44,33 @@ function getJSON() {
     //cena: obj[0]['result']['extractorData']['data'][0]['group'][0]['Price'][0]['text']
     //cena: obj[0]['result']['extractorData']['data'][0]['group'][0]['Name'][0]['text']
     //cena: obj[0]['result']['extractorData']['data'][0]['group'][0]['Image main'][0]['src']
-    //cena: obj[0]['result']['extractorData']['data'][0]['group'][0]['Details'][0]['text']
+    //cena: obj[0]['result']['extractorData']['data'][0]['group'][0]['Detalis'][0]['text']
     //cena: obj[0]['result']['extractorData']['data'][0]['group'][0]['Description'][0]['text']
+
+    console.log(testowo[0]['result']['extractorData']['data'][0]['group'][0]['Size'][0]['text']);
+    console.log(testowo[0]['result']['extractorData']['data'][0]['group'][0]['Price'][0]['text']);
+    console.log(testowo[0]['result']['extractorData']['data'][0]['group'][0]['Name'][0]['text']);
+    console.log(testowo[0]['result']['extractorData']['data'][0]['group'][0]['Image main'][0]['src']);
+    console.log(testowo[0]['result']['extractorData']['data'][0]['group'][0]['Detalis'][0]['text']);
+    console.log(testowo[0]['result']['extractorData']['data'][0]['group'][0]['Description'][0]['text']);
 }
 
 $(document).ready(function () {
+
+    if(window.localStorage.getItem("desks")!=undefined && window.localStorage.getItem("size")!=undefined && window.localStorage.getItem("color")!=undefined) {
+        if($(".ls-desks").length) {
+            $(".ls-desks").val(window.localStorage.getItem("desks"));
+        }
+        if($(".ls-size").length) {
+            $(".ls-size").val(window.localStorage.getItem("size"));
+        }
+        if($(".ls-color").length) {
+            $(".ls-color").val(window.localStorage.getItem("color"));
+        }
+        if($(".ls-img").length) {
+            $(".ls-img").attr("src",window.localStorage.getItem("img"));
+        }
+    }
 
     $("input[type='file']").change(function () {
         readURL(this);
@@ -59,7 +81,7 @@ $(document).ready(function () {
       window.localStorage.setItem("size",$($("input[type='number']")[1]).val())
     });
     $('#designTabs a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
+        e.preventDefault()
+        $(this).tab('show')
     });
 })
