@@ -119,7 +119,7 @@ function getTable() {
         }
     }
 
-    $("#fullpricebox").html(fullprice+" PLN");
+    $(".fullpricebox").html(fullprice+" PLN");
 }
 
 $(document).ready(function () {
