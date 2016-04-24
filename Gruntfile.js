@@ -359,9 +359,13 @@ module.exports = function (grunt) {
         src: 'docs/_jade/customizer-nav.jade',
         dest: 'docs/_includes/nav/customize.html'
       },
-      files: {
+      index: {
         src: 'jade/index.jade',
         dest: 'dist/index.html'
+      },
+      design: {
+        src: 'jade/design.jade',
+        dest: 'dist/design.html'
       }
     },
 
