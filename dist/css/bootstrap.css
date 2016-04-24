@@ -6894,7 +6894,7 @@ button.close {
 }
 .logo-img {
   max-width: 75px;
-  max-height: 45px;
+  max-height: 24px;
 }
 .video {
   position: absolute;
@@ -6958,7 +6958,7 @@ section {
 }
 #list.affix {
   position: relative;
-  padding-top: 45px;
+  padding-top: 65px;
 }
 #list .nav > li > a:hover {
   cursor: pointer;
@@ -6967,5 +6967,27 @@ section {
 }
 #list .nav > li > a > img.img-block {
   max-width: 100%;
+}
+.order-table {
+  margin-top: 40px;
+}
+.order-table > tbody > tr th {
+  border-top: none;
+}
+.order-table > tbody > tr > td {
+  height: 120px;
+  vertical-align: middle;
+}
+.name-td {
+  width: 300px;
+}
+.product-img {
+  width: 120px;
+}
+.product-img img {
+  max-height: 100%;
+}
+.order-row {
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
