@@ -6941,7 +6941,7 @@ section {
   background-color: transparent;
   border: none;
 }
-.order-bar .input-lg {
+.order-bar input.input-lg {
   border: none;
   border-bottom: 1px #ddd solid;
 }

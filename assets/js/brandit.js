@@ -5,7 +5,8 @@ function readURL(input) {
         reader.onload = function (e) {
             window.localStorage.setItem("img",e.target.result);
             var img = document.getElementById("image_upload_preview");
-            img.setAttribute('src', e.target.result)
+            img.setAttribute('src', e.target.result);
+            $("#logo-text").hide();
 
             img.addEventListener('load', function() {
                 var vibrant = new Vibrant(img);
@@ -125,5 +126,9 @@ $(document).ready(function () {
       window.localStorage.setItem("desks",$($("input[type='number']")[0]).val())
       window.localStorage.setItem("size",$($("input[type='number']")[1]).val())
       getTable();
+    });
+    $('#designTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
     });
 })
