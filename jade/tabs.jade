@@ -1,4 +1,4 @@
-section#list
+section#list(data-spy="affix" data-offset-top="235")
   .container
     ul#designTabs.row.nav.nav-tabs
       li.col-md-4
@@ -6,7 +6,7 @@ section#list
           img.img-block(src="./img/img-minimal.jpg")
           h1 Minimal
           p Simple and cheap but sill looking awsome. Ideal for early stage project and companies.
-      li.col-md-4
+      li.col-md-4.active
         a
           img.img-block(src="./img/img-economy.jpg") 
           h1 Economy 
@@ -16,3 +16,10 @@ section#list
           img.img-block(src="./img/img-full.jpg") 
           h1 Full
           p Everything the best, unique and esentional design perfect for your mature company.
+    .tab-content
+      #minimal.tab-pane.active(role='tabpanel') 
+        include table
+      #economy.tab-pane(role='tabpanel')
+        include table
+      #full.tab-pane(role='tabpanel')
+        include table

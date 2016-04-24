@@ -6932,7 +6932,6 @@ section {
 .order-bar {
   color: #fff;
   background-color: #269792;
-  border-bottom: 1px #ddd solid;
 }
 .order-bar .btn-file {
   min-width: 110px;
@@ -6944,11 +6943,29 @@ section {
 }
 .order-bar .input-lg {
   border: none;
+  border-bottom: 1px #ddd solid;
 }
 .order-bar .btn-file {
   color: #555;
   background-color: #fff;
   border: none;
   border-radius: 0;
+}
+.order-bar.affix {
+  top: 65px;
+  z-index: 99999;
+  width: 100%;
+}
+#list.affix {
+  position: relative;
+  padding-top: 45px;
+}
+#list .nav > li > a:hover {
+  cursor: pointer;
+  background-color: rgba(38, 151, 146, .3);
+  border-color: #fff #fff #ddd;
+}
+#list .nav > li > a > img.img-block {
+  max-width: 100%;
 }
 /*# sourceMappingURL=bootstrap.css.map */

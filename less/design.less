@@ -10,12 +10,10 @@
 .order-bar{
     background-color: @brand-primary;
     color: #fff;
-    border-bottom: 1px #ddd solid;
     
     .btn-file{
         min-width: 110px;
     }
-    
     .input-group-addon{
         background-color: transparent;
         border: none;
@@ -23,6 +21,7 @@
     }
     .input-lg{
         border: none;
+        border-bottom: 1px #ddd solid;
     }
     .btn-file{
         background-color: #fff;
@@ -30,4 +29,25 @@
         border-radius: 0px;
         color: @gray;
     }
+    &.affix{
+        top: 65px;
+        z-index: 99999;
+        width: 100%;
+    }
+}
+#list{
+    &.affix{
+        padding-top: 65px; 
+        position: relative;
+    }
+.nav>li>a{
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(38, 151, 146, .3);
+        border-color: #fff #fff #ddd;
+    }
+    &>img.img-block{
+        max-width: 100%;
+    }
+}
 }
