@@ -4,7 +4,7 @@
     .row.text-center
       .col-md-8.input-group
         span.input-group-addon.input-lg Number of desks:
-        input.form-control.input-lg.text-right.ls-desks(type="number", placeholder="")
+        input.form-control.input-lg.text-right.ls-desks(type="number", placeholder="", min=1)
         span.input-group-addon.input-lg( style="border-left: 0; border-right: 0;") Office size: 
         input.form-control.input-lg.text-right.ls-size(type="number", placeholder="")
         span.input-group-addon.input-lg( style="border-left: 0; border-right: 0;") m2
@@ -12,4 +12,4 @@
           span#logo-text Logo
           input(type='file')
           img.logo-img#image_upload_preview.ls-img
-        
+        span.input-group-addon.input-lg.ls-color( style="border-left: 0; border-right: 0; border-radius:0;") &nbsp;&nbsp;
